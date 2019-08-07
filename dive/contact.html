@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>お問い合わせ - 株式会社DIVE</title>
+    <!-- normalize.cssの読み込み -->
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!-- 自分で作成したcssの読み込み -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header clearfix">
+        <img src="./images/logo.png" class="logo_image">
+        <nav>
+          <ul class="top_menu clearfix">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="business.html">事業内容</a></li>
+            <li><a href="company.html">会社概要</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <img src="./images/contact.png" alt=""  class="image_area">
+      <div class="wrapper clearfix">
+        <aside class="side_menu">
+          <nav>
+            <ul>
+              <li><a href="business.html">事業内容</a></li>
+              <li><a href="company.html">会社概要</a></li>
+              <li class="point"><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+          </nav>
+          <p class="banner">
+            <a href="#">
+              <img src="./images/banner.png" alt="バナー">
+            </a>
+          </p>
+        </aside>
+        <article class="content">
+          <table>
+            <tr>
+              <th>お名前</th>
+              <td>
+                <input type="text" name="name">
+              </td>
+            </tr>
+            <tr>
+              <th>メールアドレス</th>
+              <td>
+                <input type="email">
+              </td>
+            </tr>
+            <tr>
+              <th>性別</th>
+              <td>
+                <input type="radio" name="sex" value="man" checked="checked">男
+                <input type="radio" name="sex" value="woman">女
+              </td>
+            </tr>
+            <tr>
+              <th>お問い合せ内容</th>
+              <td>
+                <input type="email" class="contact_input">
+              </td>
+            </tr>
+          </table>
+          <p id="submit">
+            <input type="submit" value="送信">
+          </p>
+        </article>
+      </div>
+      <footer class="footer">
+        <p>Copyright © 2019 DIVE INC All RIGHTS RESERVED.</p>
+      </footer>
+    </div>
+  </body>
+</html>

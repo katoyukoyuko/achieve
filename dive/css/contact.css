@@ -1,0 +1,38 @@
+.content tr {
+  height: 7rem;
+}
+.content th {
+  width: 150px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.content td {
+  width: 480px;
+}
+
+.contact_input {
+  height: 7rem;
+}
+
+input[type="text"] ,input[type="email"] {
+  width: 480px;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+input[type="submit"] {
+  width: 80px;
+  height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  border-style: none;
+  letter-spacing: 0.5rem;
+  background-color: #00afcc;
+}
+
+#submit {
+  text-align: center;
+}
