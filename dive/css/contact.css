@@ -21,6 +21,7 @@ input[type="text"] ,input[type="email"] {
 
 input[type="radio"] {
   margin-right: 8px;
+  vertical-align: middle;
 }
 
 input[type="submit"] {
@@ -31,6 +32,7 @@ input[type="submit"] {
   border-style: none;
   letter-spacing: 0.5rem;
   background-color: #00afcc;
+  text-align: center;
 }
 
 #submit {
