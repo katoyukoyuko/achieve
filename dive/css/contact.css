@@ -36,5 +36,7 @@ input[type="submit"] {
 }
 
 #submit {
+  display: block;
   text-align: center;
+  margin-top: 20px;
 }
