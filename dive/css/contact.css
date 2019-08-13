@@ -19,9 +19,9 @@ input[type="text"] ,input[type="email"] {
   width: 480px;
 }
 
-input[type="radio"] {
-  margin-right: 8px;
-  vertical-align: middle;
+.sex_vartical_align input {
+  vertical-align: 0.2rem;
+  margin: 0 8px;
 }
 
 input[type="submit"] {
@@ -31,12 +31,19 @@ input[type="submit"] {
   color: #fff;
   border-style: none;
   letter-spacing: 0.5rem;
-  background-color: #00afcc;
   text-align: center;
+  text-indent: 0.3em;
+  background-color: #00afcc;
+
 }
 
 #submit {
   display: block;
   text-align: center;
   margin: 20px 0;
+}
+
+
+#submit:hover {
+  opacity: 0.5;
 }
