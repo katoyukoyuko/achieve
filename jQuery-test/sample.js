@@ -19,9 +19,10 @@ $(document).ready(function() { //①HTML=DOMの読み込みが終わったらfun
     for(let i = 0; i < subject_number.length; i++){
       console.log(`subject_number ${i}`);
       console.log(`配列の中身 ${subject_number[i]}`);
-      sum =+ subject_number[i];
+      sum += subject_number[i];
       console.log(`プラスの後のsum ${sum}`);
     }
+
     //let sum = subject_number.reduce((a,x) => a+=x,0); //合計点を計算
     $('#sum_indicate').text(sum); //⑥id="sum_indicate"の次にsum出力
 
