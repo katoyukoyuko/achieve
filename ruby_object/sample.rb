@@ -6,7 +6,7 @@ class Player
       puts "1: チョキ"
       puts "2: パー"
 
-      my_hand = gets.to_i
+      my_hand = gets.chomp
       return my_hand
   end
 end
@@ -25,32 +25,37 @@ class Janken
     # その際、あいこもしくはグー、チョキ、パー以外の値入力時には、もう一度ジャンケンをする
     # 相手がグー、チョキ、パーのうち、何を出したのかも表示させる
 
-    difference_rest = (player_hand - enemy_hand) % 3
+    player_hand_num = player_hand.to_i
+    enemy_hand_num = enemy_hand.to_i
+
+    difference_rest = (player_hand_num - enemy_hand_num + 3) % 3
 
     janken_array = ["グー", "チョキ", "パー"]
 
-    if((player_hand < 0) || (player_hand > 2))
+    if (player_hand != "0") || (player_hand != "1") || (player_hand != "2")
+      puts player_hand
+      puts player_hand.class
       puts "0~2の数字を入力してください"
       player = Player.new
       enemy = Enemy.new
       pon(player.hand, enemy.hand)
 
     elsif difference_rest == 0
-      puts "あなたは#{janken_array[player_hand]}を出しました"
-      puts "相手は#{janken_array[enemy_hand]}を出しました"
+      puts "あなたは#{janken_array[player_hand_num]}を出しました"
+      puts "相手は#{janken_array[enemy_hand_num]}を出しました"
       puts "あいこです"
       player = Player.new
       enemy = Enemy.new
       pon(player.hand, enemy.hand)
 
     elsif difference_rest == 2
-      puts "あなたは#{janken_array[player_hand]}を出しました"
-      puts "相手は#{janken_array[enemy_hand]}を出しました"
+      puts "あなたは#{janken_array[player_hand_num]}を出しました"
+      puts "相手は#{janken_array[enemy_hand_num]}を出しました"
       puts "あなたの勝ちです"
 
     elsif difference_rest == 1
-      puts "あなたは#{janken_array[player_hand]}を出しました"
-      puts "相手は#{janken_array[enemy_hand]}を出しました"
+      puts "あなたは#{janken_array[player_hand_num]}を出しました"
+      puts "相手は#{janken_array[enemy_hand_num]}を出しました"
       puts "相手の勝ちです"
     end
   end
@@ -64,7 +69,6 @@ janken = Janken.new
 
 # 下記の記述で、ジャンケンメソッドが起動される
 janken.pon(player.hand, enemy.hand)
-
 
 
 # ---------------------------
