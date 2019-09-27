@@ -32,9 +32,7 @@ class Janken
 
     janken_array = ["グー", "チョキ", "パー"]
 
-    if (player_hand != "0") || (player_hand != "1") || (player_hand != "2")
-      puts player_hand
-      puts player_hand.class
+    if (player_hand != "0") && (player_hand != "1") && (player_hand != "2")
       puts "0~2の数字を入力してください"
       player = Player.new
       enemy = Enemy.new
